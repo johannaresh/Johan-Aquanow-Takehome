@@ -26,7 +26,7 @@ st.caption(f"Last updated: {data['timestamp']}")
 
 col1, col2 = st.columns(2)
 col1.metric("Total Market Cap", f"${data['total_market_cap_usd']:,.0f}")
-col2.metric("Avg Market Cap (Top 10)", f"${data['average_market_cap_usd']:,.0f}")
+col2.metric("Avg Market Cap ", f"${data['average_market_cap_usd']:,.0f}")
 
 st.subheader("📈 Top Gainers (24h)")
 for coin in reversed(data["top_gainers"]):
